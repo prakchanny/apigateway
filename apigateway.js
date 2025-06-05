@@ -22,7 +22,7 @@ function authToken(req, res, next) {
         if (err) {
             return res.status(403).json({ message: 'Failed to authenticate token' });
         }
-        req.user = decoded; // Store user info in request
+        req.user = user; // Store user info in request
         next();
     });
 }
