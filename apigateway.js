@@ -51,7 +51,7 @@ app.use('/student', authToken, authRole('student'), (req, res) => {
 
 app.use('/auth', (req, res) => {
     console.log('INSIDE AUTH Login ROUTE ');
-    proxy.web(req, res, { target: '54.147.54.33:6000' });
+    proxy.web(req, res, { target: 'http://54.147.54.33:5050' });
 
 })
 
