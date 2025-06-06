@@ -7,7 +7,7 @@ const proxy = httpProxy.createProxyServer();
 
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
-const JWT_SECRETE =  process.env.JWT_SECRETE;
+const JWT_SECRETE =  '12345678';
 
 function authToken(req, res, next) {
     console.log(req.headers.authorization);
